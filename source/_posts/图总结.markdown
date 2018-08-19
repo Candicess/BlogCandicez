@@ -1,0 +1,51 @@
+title: 图总结
+date: 2015-04-18 22:18:44
+tags: 数据结构与算法
+---
+
+图的遍历。
+
+<!--more-->
+
+## 结构体定义
+
+```
+class EdgeNode {
+	int adjvex;
+	EdgeNode next;
+}
+
+class VertexNode {
+	char data;
+	EdgeNode firstedge;
+};
+
+class GraphAdjList {
+	AdjList adjList;
+	int numVertexes, numEdges;
+}
+```
+
+## 邻接表的深度优先递归算法
+
+```
+void dfs(GraphAdjList gl, int i) {
+	visited[i] = true;
+	print(gl.adjList[i].data);
+	EdgeNode p = gl.adjList[i].firstedge;
+
+	while (p) {
+		if ( !visited[p.adjvex] )
+			DFS(gl, p.adjVex);
+		p = p.next;
+	}
+}
+
+void dfsTraverse(GraphAdjList gl) {
+	for (i=0;i<gl.numVertexes;i++)
+		visited[i] = false;
+	for (i=0;i<gl.numVertexes;i++)
+		if (!visited[i])
+			dfs(gl, i);
+}
+```

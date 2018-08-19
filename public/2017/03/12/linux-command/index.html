@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>必备Linux常用命令概要 | zhouwut7</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="记录下常见必备的Linux命令，方便日后回顾。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="必备Linux常用命令概要">
+<meta property="og:url" content="http://www.zhouwut7.cn/2017/03/12/linux-command/index.html">
+<meta property="og:site_name" content="zhouwut7">
+<meta property="og:description" content="记录下常见必备的Linux命令，方便日后回顾。">
+<meta property="og:updated_time" content="2017-10-16T03:26:25.235Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="必备Linux常用命令概要">
+<meta name="twitter:description" content="记录下常见必备的Linux命令，方便日后回顾。">
+  
+    <link rel="alternative" href="/atom.xml" title="zhouwut7" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://buru.u.qiniudn.com/firebase-2.0.5.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xivx9.com1.z0.glb.clouddn.com/zhouwut.jpeg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Candice</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">better me</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/timeline">时间线</a></li>
+				        
+							<li><a href="/aboutme">关于我</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="mail" target="_blank" href="mailto:zhouwt7@163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/AES/" style="font-size: 10px;">AES</a> <a href="/tags/GBN/" style="font-size: 10px;">GBN</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Python/" style="font-size: 12.5px;">Python</a> <a href="/tags/TCP/" style="font-size: 10px;">TCP</a> <a href="/tags/Wireshark/" style="font-size: 12.5px;">Wireshark</a> <a href="/tags/netwox/" style="font-size: 10px;">netwox</a> <a href="/tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="/tags/数据结构与算法/" style="font-size: 17.5px;">数据结构与算法</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/路由算法/" style="font-size: 10px;">路由算法</a> <a href="/tags/迪杰斯特拉/" style="font-size: 10px;">迪杰斯特拉</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://zacharyjia.github.io/">某学弟</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cdxy.me/">cdxy</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">会弹钢琴&amp;会敲键盘的女程序媛</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Candice</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xivx9.com1.z0.glb.clouddn.com/zhouwut.jpeg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Candice</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">better me</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/timeline">时间线</a></li>
+		        
+					<li><a href="/aboutme">关于我</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="mail" target="_blank" href="mailto:zhouwt7@163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-linux-command" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/12/linux-command/" class="article-date">
+  	<time datetime="2017-03-12T07:04:44.000Z" itemprop="datePublished">2017-03-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      必备Linux常用命令概要
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>记录下常见必备的Linux命令，方便日后回顾。</p>
+<a id="more"></a>
+<h2 id="两个很有用的网站">两个很有用的网站</h2><p><a href="http://www.cnblogs.com/Javame/p/3968343.html" target="_blank" rel="external">软件测试人员必备Linux命令</a></p>
+<p><a href="http://man.linuxde.net/" target="_blank" rel="external">Linux命令速查</a></p>
+<h2 id="CheckList">CheckList</h2><ul>
+<li>cat 查看文件内容</li>
+<li>chmod 修改文件权限</li>
+<li>chown 将文件的所有者修改为另一个用户</li>
+<li>find 查找文件名</li>
+<li>file 查看文件的内容类型</li>
+<li>mkdir 创建目录</li>
+<li>more、less 分页查看（空格下一页 B上一页）</li>
+<li>head、tail 查看文件头部、尾部  默认10行</li>
+<li>mv、cp  移动 拷贝</li>
+<li>rm(<code>rm -rf folder_name</code>) 移除</li>
+<li>which(显示一个命令的真实地址，如 which git)</li>
+<li>scp(<code>scp sedstudy.txt root@47.94.89.226:~/sedstudycopy.txt</code>) 在两台主机之间进行文件的拷贝</li>
+<li>awk</li>
+<li>grep 过滤</li>
+<li>sed</li>
+<li>look</li>
+<li>wc</li>
+<li>cd</li>
+<li>pwd(显示当前的绝对路径)</li>
+<li>mount umount(挂载和卸载设备)</li>
+<li>ls (ls -lsa     ll) 查看文件</li>
+<li>telnet(查看47.x主机的80端口是否开放 <code>telnet 47.94.89.226 80</code>)</li>
+<li>ifconfig 查看网络设置</li>
+<li>ping </li>
+<li>netstat     </li>
+<li>kill(kill pid)</li>
+<li>ps(最常用的是ps -aux，可以再结合grep，如查找ssh的进程pid号-&gt; <code>ps -aux | grep ssh</code>)</li>
+<li>free(-b:B -k:KB -m:MB -t:Total) 查看内存的使用情况</li>
+<li>top(需要查一下各个字段的含义)</li>
+<li>shutdown(现在关机:<code>shutdown -h now</code>  现在重启:<code>shutdown -r now</code>)</li>
+<li>sudo 以超级管理员的身份执行命令</li>
+<li>who(显示目前登录系统的用户信息)</li>
+<li>whoami(显示当前有效的用户名称)</li>
+<li>su 切换用户</li>
+<li>clear</li>
+<li>crontab(定时/定期执行命令或脚本)</li>
+<li>tar 压缩 解压</li>
+<li>source(链接shell) 配置文件生效（服务器配Java环境）</li>
+<li>>覆盖 >>追加</li>
+<li>man    查看命令帮助</li>
+<li>curl 访问url或下载文件(访问并过滤-&gt;<code>curl http://zhouwut.cn | grep better</code>   下载文件-&gt;<code>curl -o filename.html http://zhouwut.cn/index.html</code>  -o是output)</li>
+<li>wget 下载文件(<code>wget http://zhouwut.cn/index.html</code>)</li>
+</ul>
+<h2 id="备忘">备忘</h2><h3 id="sed命令">sed命令</h3><p>TODO<br>AND</p>
+<h4 id="增">增</h4><p>第2行下增加sth<br>sed ‘2a sth’ </p>
+<p>2-5行每行的下一行增加sth<br>sed ‘2,5a sth’ </p>
+<p>2-最后一行每行的下一行增加sth<br>sed ‘2,$a sth’ </p>
+<p>2行前增加sth<br>sed ‘2i sth’</p>
+<h4 id="删">删</h4><p>删除第2-5行<br>sed ‘2,5d’</p>
+<h4 id="替换_c-&gt;取代">替换 c-&gt;取代</h4><p>2-5行的内容为一行的sth<br>sed ‘2,5c sth’</p>
+<h4 id="查">查</h4><p>只显示2-5行的内容(Todo：加不加-n会有区别，不知道为什么)<br>sed -n ‘2,5p’</p>
+<p>搜寻有sth关键字的行<br>sed -n ‘/sth/p’</p>
+<p>只显示不包含sth的行<br>sed ‘/sth/d’</p>
+<p>打印第一个找到的first行到第4行的内容<br>sed -n ‘/first/, 4p’</p>
+<h4 id="字符串替换">字符串替换</h4><p>sed ‘s/origin/after/g’</p>
+<p>删除包含delme和delmine<br>sed ‘s/delme//g’ | sed ‘s/delmine//g’</p>
+<p>直接对源文件修改<br>sed -i ‘s/first/second/g’ filename</p>
+<h3 id="awk">awk</h3><p>awk [-F  field-separator]  ‘commands’</p>
+<p>awk依次会读入每一行，并以每一行为单位进行操作</p>
+<p>显示以:分割的每行的第一个元素<br>cat /etc/passwd | awk -F ‘:’ ‘{print $1}’</p>
+<p>显示以:分割的每行的第一个、和第七个元素，输出时中间加个逗号<br>cat /etc/passwd | awk -F ‘:’ ‘{print $1 “,” $7}’</p>
+<p>同上，但是在开头和结尾添加自定义内容<br>cat /etc/passwd | awk -F ‘:’ ‘BEGIN {print “name, shell”} {print $1 “,” $7} END {print “I am the end.”}’</p>
+<p>搜索/etc/passwd中以root关键字开头的所有行，并显示对应的第一个和第七个元素(/pattern/，其中pattern支持正则)<br>cat /etc/passwd | awk -F ‘:’ ‘/^root/{print $1, $7}’</p>
+<h3 id="wc_-_word_count">wc - word count</h3><p>基本命令<br>-c chars bytes 统计字节数<br>-l lines 统计行数<br>-m 统计字符数。这个标志不能与 -c 标志一起使用，结果一般与-c相同<br>-w words 统计字数。一个字被定义为由空白、跳格或换行字符分隔的字符串<br>-L 打印最长行的长度</p>
+<p>wc 命令 文件名</p>
+<p>显示行数<br>wc -l /etc/passwd</p>
+<p>显示单词数<br>wc -w /etc/passwd</p>
+<p>显示字节数(字符数)<br>wc -c /etc/passwd</p>
+<p>显示行数+单词数+字节数<br>wc /etc/passwd</p>
+<h3 id="look">look</h3><p>查询每行以某个字符串开头的所有行<br>look root /etc/passwd</p>
+<h3 id="netstat">netstat</h3><p>-a (all)显示所有选项，默认不显示LISTEN相关<br>-t (tcp)仅显示tcp相关选项<br>-u (udp)仅显示udp相关选项<br>-n 拒绝显示别名，能显示数字的全部转化成数字。<br>-l 仅列出有在 Listen (监听) 的服務状态</p>
+<p>-p 显示建立相关链接的程序名<br>-r 显示路由信息，路由表<br>-e 显示扩展信息，例如uid等<br>-s 按各个协议进行统计<br>-c 每隔一个固定时间，执行该netstat命令。</p>
+<p>以上参数都可组合使用，如 netstat -atul</p>
+<p>列出所有的tcp端口<br>netstat -at</p>
+<p>列出所有正在监听的udp端口<br>netstat -alu</p>
+<p>显示ssh进程占用的端口<br>netstat -ap | grep ssh</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/05/14/Java 基础知识-导图/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Java 基础知识 - 知识导图
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/02/单链表逆置/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">单链表逆置</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="linux-command" data-title="必备Linux常用命令概要" data-url="http://www.zhouwut7.cn/2017/03/12/linux-command/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"icodeyou"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 Candice
+    	</div>
+
+      <div class="footer-right">
+      	<a href="http://www.zhouwut.cn/" target="_blank">以大多数人的努力程度之低，根本轮不到拼天赋</a>
+        <font id="sum_counter"></font>
+        <font id="detail_counter"></font>        
+      </div>
+    </div>
+  </div>
+
+  <script>
+  var io10blogFirebase = new Firebase("https://icodeyou.firebaseio.com/");
+
+  // 明细由当前页面的url表示，将反斜线替换成下划线，并将中文decode出来
+  var current_url = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));
+  // 获取总数，并将总访问量展示在页面上
+  io10blogFirebase.child("sum").on("value", function(data) {
+    var current_counter = data.val();
+    if( $("#sum_counter").length > 0  && current_counter >1 ){
+        $("#sum_counter").html(
+          "&nbsp;|&nbsp;总访问量&nbsp;<font style='color:gray'>"+ current_counter +"</font>&nbsp;次"
+         );
+    };
+  });
+  // 获取明细，并将明细也展示在页面上
+  io10blogFirebase.child("detail/"+current_url).on("value", function(data){
+    var detail_counter = data.val();
+    if($("#detail_counter").length > 0 && detail_counter > 1){
+      $("#detail_counter").html(
+        "&nbsp;本页访问量&nbsp;<font style='color:gray'>"+ detail_counter +"</font>&nbsp;次"
+      );
+    }
+  });
+
+  // 总数+1
+  io10blogFirebase.child("sum").transaction(function (current_counter) {
+    return (current_counter || 0) + 1;
+  });
+  // 明细+1
+  io10blogFirebase.child("detail/"+current_url).transaction(function (current_counter) {
+    return (current_counter || 0) + 1;
+  });
+  </script>
+
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254722126'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1254722126%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+  </div>
+</body>
+</html>

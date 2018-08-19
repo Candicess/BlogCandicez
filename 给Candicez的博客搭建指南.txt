@@ -1,0 +1,13 @@
+[环境]
+1、BlogWT拉到新电脑上
+2、安装hexo-cli: npm install -g hexo-cli (先看看npm安没安装)
+3、看看hexo的版本 hexo version
+
+[写作]
+1、在BlogWT的source/_post目录下写.md文件
+2、hexo g 生成在public目录
+3、hexo server启动本地服务器预览，地址http://localhost:4000
+
+[部署]
+1、Cyberduck进入121.42.208.105->/alidata/www/candicez
+2、上传BlogWT/public全部文件至candicez
